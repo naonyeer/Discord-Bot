@@ -31,7 +31,7 @@ time.sleep(1)
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-with open("message.txt", "r") as f:
+with open("message.txt", "r", encoding="utf-8", errors="ignore") as f:
     words = f.readlines()
 
 with open("token.txt", "r") as f:
